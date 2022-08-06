@@ -29,7 +29,7 @@ export const NavBar = styled.nav`
   padding-top: 40px;
   z-index: 100;
   transform: translateX(50px);
-  opacity: 0;
+  opacity: 0.8;
   animation: animaLeft 0.6s forwards;
 
   @keyframes animaLeft {
@@ -74,9 +74,9 @@ export const NavBar = styled.nav`
 
   @media (min-width: 700px) {
     display: flex;
-    position: static;
-    height: auto;
+    height: 60px;
     width: auto;
+    position: static;
     background: transparent;
 
     ul {

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  margin-top: 60px;
+  margin-top: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
