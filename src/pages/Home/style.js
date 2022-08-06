@@ -16,7 +16,6 @@ export const Container = styled.section`
 export const Intro = styled.div`
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   gap: 25px;
   transform: translateX(-50px);
   opacity: 0;
