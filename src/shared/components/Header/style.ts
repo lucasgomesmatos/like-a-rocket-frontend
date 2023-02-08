@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Section = styled.section`
+export const Section = styled.header`
   width: 100vw;
   background-color: ${(props) => props.theme.body};
   padding: 1rem;

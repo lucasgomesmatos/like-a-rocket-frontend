@@ -21,6 +21,7 @@ export const light = {
 export const dark = {
   body: '#0D0D0D',
   text: '#DDDDDD',
+  white: '#fff',
   bodyRba: '32,32,32',
   textRba: '255,255,255',
 
