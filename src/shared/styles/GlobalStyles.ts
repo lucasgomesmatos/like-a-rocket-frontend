@@ -5,12 +5,12 @@ export const GlobalStyles = createGlobalStyle`
 
 @font-face {
   font-family: "Monument Bold";
-  src: url("/public/fonts/MonumentExtendedBold.otf");
+  src: url("../../../public/fonts/MonumentExtendedBold.otf");
 }
 
 @font-face {
   font-family: "Monument Regular";
-  src: url("/public/fonts/MonumentExtendedRegular.otf");
+  src: url("../../../public/fonts/MonumentExtendedRegular.otf");
 }
 
 *,*::before, *::after {

@@ -13,8 +13,8 @@ export const Section = styled.div`
   padding: 1rem;
 
   img {
-    width: 22rem;
-    height: 22rem;
+    width: 28rem;
+    height: 28rem;
     animation: ${rotate} 30s infinite linear reverse;
   }
 `;

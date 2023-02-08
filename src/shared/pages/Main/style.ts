@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Section = styled.section`
   background-color: ${(props) => props.theme.body};
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,20 +22,30 @@ export const Container = styled.div`
   align-items: center;
 `;
 
+interface IBoxProps {
+  direction?: 'baseline' | 'flex-end' | 'center';
+}
+
 export const Box = styled.div`
   width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: ${({ direction = 'center' }: IBoxProps) => direction};
 `;
 
-export const SubTitle = styled.h3`
+export const Title = styled.h1`
+  font-family: 'Monument Regular', sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+`;
+
+export const SubTitle = styled.p`
   margin: 1rem 0;
   font-size: 1.2rem;
-  color: ${(props) => `rgba(${props.theme.textRba}, .6)`};
-  font-weight: 600;
+  color: ${(props) => props.theme.text};
+  font-weight: 500;
   letter-spacing: 1px;
 `;
 

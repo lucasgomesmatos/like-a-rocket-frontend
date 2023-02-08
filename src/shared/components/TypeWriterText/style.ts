@@ -7,7 +7,7 @@ export const Title = styled.h1`
 `;
 
 export const SubTitle = styled.h3`
-  margin: 1rem 0;
+  margin: 2rem 0;
   font-size: 1.2rem;
   color: ${(props) => `rgba(${props.theme.textRba}, .6)`};
   font-weight: 600;

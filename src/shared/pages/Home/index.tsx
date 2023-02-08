@@ -9,7 +9,7 @@ export const Home = () => {
         <C.Box>
           <TypeWriterText />
         </C.Box>
-        <C.Box>
+        <C.Box direction="flex-end">
           <Round />
         </C.Box>
       </C.Container>
