@@ -13,6 +13,9 @@ export const Service = () => {
       <C.Row direction="none">
         <C.Item>Otimização de sites (SEO)</C.Item>
       </C.Row>
+      <C.Row direction="reverse">
+        <C.Item>Gestão de Tráfego</C.Item>
+      </C.Row>
     </C.Section>
   );
 };

@@ -1,23 +1,23 @@
 import { ThemeProvider } from 'styled-components';
-import { Footer } from './shared/components/Footer';
 import { Header } from './shared/components/Header';
 import { About } from './shared/pages/About';
-import { Faq } from './shared/pages/Faq';
+import { Clients } from './shared/pages/Clients';
+import { Footer } from './shared/pages/Footer';
 import { Home } from './shared/pages/Home';
 import { Main } from './shared/pages/Main';
 import { Service } from './shared/pages/Service';
-import { dark } from './shared/styles/Themes';
+import { defaultTheme } from './shared/styles/theme/default';
 
 export const App = () => {
   return (
     <>
-      <ThemeProvider theme={dark}>
+      <ThemeProvider theme={defaultTheme}>
         <Header />
         <Home />
         <Main />
         <About />
         <Service />
-        <Faq />
+        <Clients />
         <Footer />
       </ThemeProvider>
     </>

@@ -1,16 +1,17 @@
 import styled, { keyframes } from 'styled-components';
 
 export const Section = styled.section`
-  min-height: 100vh;
+  min-height: 50vh;
   width: 100vw;
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  /* background: lightblue; */
 `;
 
 export const Title = styled.h1`
+  margin-bottom: 2rem;
   font-family: 'Monument Bold', sans-serif;
   text-transform: uppercase;
   font-size: 4rem;

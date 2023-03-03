@@ -14,7 +14,6 @@ export const ItemContainer = styled.div`
 
 export const Box = styled.div`
   height: fit-content;
-  /* background: ${(props) => props.theme.text}; */
   color: ${(props) => props.theme.text};
 
   padding: 1rem;

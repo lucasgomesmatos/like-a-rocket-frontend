@@ -13,7 +13,7 @@ export const NavBar = styled.nav`
   align-items: center;
 
   width: 85%;
-  height: ${(props) => props.theme.navHeight};
+  height: 5rem;
   margin: 0 auto;
 
   color: ${(props) => props.theme.text};
