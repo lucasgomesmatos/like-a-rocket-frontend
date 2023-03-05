@@ -20,6 +20,14 @@ export const Title = styled.h1`
   align-items: center;
   justify-content: center;
   padding: 2rem;
+
+  @media (max-width: 74em) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 64em) {
+    font-size: 2rem;
+  }
 `;
 
 const move = keyframes`
@@ -53,4 +61,12 @@ export const Item = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 74em) {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 64em) {
+    font-size: 1rem;
+  }
 `;

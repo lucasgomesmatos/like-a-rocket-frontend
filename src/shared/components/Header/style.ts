@@ -58,7 +58,7 @@ export const Menu = styled.ul`
     justify-content: center;
     align-items: center;
     transform: ${({ open }: HamburgerMenuProps) =>
-      open ? 'translateY(0) ' : 'translateY(100%)'};
+      open ? 'translateY(0) ' : 'translateY(1000%)'};
     transition: all 0.3s ease;
 
     width: 100%;

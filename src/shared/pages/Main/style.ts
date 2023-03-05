@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Section = styled.section`
   background-color: ${(props) => props.theme.body};
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,14 +12,18 @@ export const Section = styled.section`
 `;
 
 export const Container = styled.div`
-  position: absolute;
   width: 85%;
-  min-height: 80vh;
   margin: auto;
   color: ${(props) => props.theme.text};
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 74em) {
+    width: 100%;
+    flex-direction: column;
+    padding: 1rem;
+  }
 `;
 
 interface IBoxProps {
@@ -33,12 +37,14 @@ export const Box = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: ${({ direction = 'center' }: IBoxProps) => direction};
-`;
 
-export const Title = styled.h1`
-  font-family: 'Monument Regular', sans-serif;
-  text-transform: uppercase;
-  font-size: 2rem;
+  @media (max-width: 74em) {
+    width: 80%;
+    align-items: center;
+  }
+  @media (max-width: 40em) {
+    min-height: 50vh;
+  }
 `;
 
 export const SubTitle = styled.p`
@@ -47,6 +53,10 @@ export const SubTitle = styled.p`
   color: ${(props) => props.theme.text};
   font-weight: 500;
   letter-spacing: 1px;
+
+  @media (max-width: 74em) {
+    font-size: 1rem;
+  }
 `;
 
 export const Contact = styled.div`

@@ -4,12 +4,20 @@ export const Item = styled.li`
   width: 100%;
   height: 100%;
   display: flex;
+
+  @media (max-width: 64em) {
+    justify-content: flex-end !important;
+  }
 `;
 export const ItemContainer = styled.div`
   width: 40%;
   height: fit-content;
   padding: 1rem;
   border: 3px solid ${(props) => props.theme.text};
+
+  @media (max-width: 64em) {
+    width: 80%;
+  }
 `;
 
 export const Box = styled.div`
@@ -29,6 +37,10 @@ export const Title = styled.span`
   text-transform: uppercase;
   font-family: 'Monument Regular';
   margin: 0.5rem 0;
+
+  @media (max-width: 64em) {
+    font-size: 1rem;
+  }
 `;
 export const SubTitle = styled.p`
   display: block;
@@ -36,4 +48,8 @@ export const SubTitle = styled.p`
   letter-spacing: 1px;
   font-weight: 400;
   color: ${(props) => props.theme.white};
+
+  @media (max-width: 64em) {
+    font-size: 0.9rem;
+  }
 `;

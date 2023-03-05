@@ -1,9 +1,19 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  margin-top: 2rem;
   width: 25vw;
   height: 70vh;
   object-fit: cover;
+
+  @media (max-width: 74em) {
+    width: 35vw;
+    height: fit-content;
+  }
+
+  @media (max-width: 64em) {
+    width: 45vw;
+  }
 
   img {
     display: block;

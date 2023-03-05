@@ -25,6 +25,11 @@ export const Box = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  @media (max-width: 60em) {
+    flex-direction: column;
+    gap: 2rem;
+  }
 `;
 
 export const Title = styled.span`
@@ -38,4 +43,9 @@ export const Title = styled.span`
   font-family: 'Monument Bold';
   margin: 0.5rem 0;
   color: ${(props) => props.theme.text};
+
+  @media (max-width: 60em) {
+    font-size: 1rem;
+    max-width: 65%;
+  }
 `;

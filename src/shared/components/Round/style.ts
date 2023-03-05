@@ -18,7 +18,7 @@ export const Section = styled.div`
     animation: ${rotate} 30s infinite linear reverse;
   }
 
-  @media (max-width: 73em) {
+  @media (max-width: 74em) {
     img {
       width: 24rem;
       height: 24rem;
@@ -29,6 +29,20 @@ export const Section = styled.div`
     img {
       width: 20rem;
       height: 20rem;
+    }
+  }
+
+  @media (max-width: 60em) {
+    img {
+      width: 14rem;
+      height: 14rem;
+    }
+  }
+
+  @media (max-width: 40em) {
+    img {
+      width: 10rem;
+      height: 10rem;
     }
   }
 `;
@@ -45,4 +59,16 @@ export const Circle = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media (max-width: 74em) {
+    font-size: 8rem;
+  }
+
+  @media (max-width: 64em) {
+    font-size: 6rem;
+  }
+
+  @media (max-width: 60em) {
+    font-size: 4rem;
+  }
 `;

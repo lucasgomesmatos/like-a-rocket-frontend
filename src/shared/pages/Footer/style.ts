@@ -19,6 +19,11 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid ${(props) => props.theme.body};
+
+  @media (max-width: 60em) {
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
 `;
 
 export const Left = styled.div`
@@ -51,6 +56,11 @@ export const MenuItems = styled.ul`
   justify-content: end;
   gap: 1rem;
   list-style: none;
+
+  @media (max-width: 60em) {
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const MenuItem = styled.li`
@@ -78,4 +88,9 @@ export const Copy = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 60em) {
+    font-size: 1rem;
+    text-align: center;
+  }
 `;
