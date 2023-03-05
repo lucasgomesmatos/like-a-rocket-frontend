@@ -1,5 +1,6 @@
 import { ThemeProvider } from 'styled-components';
 import { Header } from './shared/components/Header';
+import { ScrollToTop } from './shared/components/ScrollToTop';
 import { About } from './shared/pages/About';
 import { Clients } from './shared/pages/Clients';
 import { Footer } from './shared/pages/Footer';
@@ -19,6 +20,7 @@ export const App = () => {
         <Service />
         <Clients />
         <Footer />
+        <ScrollToTop />
       </ThemeProvider>
     </>
   );

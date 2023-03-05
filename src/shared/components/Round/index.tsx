@@ -5,7 +5,7 @@ export const Round = () => {
     <C.Section>
       <C.Circle>&#x2193;</C.Circle>
       <img
-        src="../../../../public/round.png"
+        src="./public/round.png"
         alt="EXPLORE THE TRANSFORMATION OF THE WORLD"
       />
     </C.Section>

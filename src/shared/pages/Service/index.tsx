@@ -2,7 +2,7 @@ import * as C from './style';
 
 export const Service = () => {
   return (
-    <C.Section>
+    <C.Section id="servicos">
       <C.Title>Serviços</C.Title>
       <C.Row direction="none">
         <C.Item>Automações</C.Item>

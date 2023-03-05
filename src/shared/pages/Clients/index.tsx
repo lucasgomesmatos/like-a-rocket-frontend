@@ -29,7 +29,7 @@ export const Clients = () => {
   }, []);
 
   return (
-    <C.Section ref={ref}>
+    <C.Section ref={ref} id="servicos">
       <C.Title>Clientes</C.Title>
       <C.Box>
         <img src={ci} alt="ciência interativa" />

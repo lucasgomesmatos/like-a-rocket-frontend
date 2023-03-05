@@ -4,7 +4,7 @@ import * as C from './style';
 
 export const Main = () => {
   return (
-    <C.Section>
+    <C.Section id="saibaMais">
       <C.Container>
         <C.Box direction="baseline">
           <Carousel />

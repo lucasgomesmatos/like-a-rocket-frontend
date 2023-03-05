@@ -4,7 +4,7 @@ import * as C from './style';
 
 export const About = () => {
   return (
-    <C.Section>
+    <C.Section id="sobre">
       <C.Title>Like a Rocket</C.Title>
       <C.Container>
         <C.SvgContainer>

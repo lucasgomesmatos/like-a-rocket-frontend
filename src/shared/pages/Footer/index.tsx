@@ -9,6 +9,16 @@ import { Logo } from '../../components/Logo';
 import * as C from './style';
 
 export const Footer = () => {
+  const scrollTo = (id: string) => {
+    let element = document.getElementById(id);
+
+    element?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    });
+  };
+
   return (
     <C.Section>
       <Banner />
@@ -31,9 +41,10 @@ export const Footer = () => {
           </C.IconsList>
         </C.Left>
         <C.MenuItems>
-          <C.MenuItem>Sobre</C.MenuItem>
-          <C.MenuItem>Serviços</C.MenuItem>
-          <C.MenuItem>Clientes</C.MenuItem>
+          <C.MenuItem onClick={() => scrollTo('home')}>Home</C.MenuItem>
+          <C.MenuItem onClick={() => scrollTo('sobre')}>Sobre</C.MenuItem>
+          <C.MenuItem onClick={() => scrollTo('servicos')}>Serviços</C.MenuItem>
+          <C.MenuItem onClick={() => scrollTo('servicos')}>Clientes</C.MenuItem>
         </C.MenuItems>
       </C.Container>
       <C.Copy>

@@ -6,7 +6,6 @@ import '../node_modules/normalize.css';
 import { App } from './App';
 import { GlobalStyles } from './shared/styles/GlobalStyles';
 import { defaultTheme } from './shared/styles/theme/default';
-import '/public/styles.css';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
