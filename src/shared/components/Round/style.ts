@@ -17,6 +17,20 @@ export const Section = styled.div`
     height: 28rem;
     animation: ${rotate} 30s infinite linear reverse;
   }
+
+  @media (max-width: 73em) {
+    img {
+      width: 24rem;
+      height: 24rem;
+    }
+  }
+
+  @media (max-width: 64em) {
+    img {
+      width: 20rem;
+      height: 20rem;
+    }
+  }
 `;
 
 export const Circle = styled.div`

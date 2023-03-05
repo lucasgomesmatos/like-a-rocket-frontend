@@ -4,6 +4,14 @@ export const Title = styled.h1`
   font-family: 'Monument Bold', sans-serif;
   text-transform: uppercase;
   font-size: 4rem;
+
+  @media (max-width: 73em) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 64em) {
+    font-size: 2.3rem;
+  }
 `;
 
 export const SubTitle = styled.h3`
