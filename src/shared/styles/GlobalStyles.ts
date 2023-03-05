@@ -27,7 +27,7 @@ body {
   font-family: "Manrope", sans-serif;
   /* font-family: "Monument Bold", sans-serif; */
   overflow-x: hidden;
-  background: #0D0D0D;
+  background: ${(props) => props.theme.body};
   
 }
 
@@ -44,7 +44,7 @@ a {
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: #ddd #0D0D0D;
+  scrollbar-color: #ddd  ${(props) => props.theme.body};;
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -53,13 +53,13 @@ a {
 }
 
 *::-webkit-scrollbar-track {
-  background: #0D0D0D;
+  background: ${(props) => props.theme.body};
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: #ddd;
   border-radius: 20px;
-  border: 1px solid #0D0D0D;
+  border: 1px solid ${(props) => props.theme.body};
 }
 
 `;
